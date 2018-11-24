@@ -1,0 +1,13 @@
+6
+a|y|rutgers
+b|y|rutgers
+c|y|cornell
+d|y|cornell
+e|y|cornell
+f|y|cornell
+a|b
+b|c
+b|e
+c|d
+e|d
+d|f
