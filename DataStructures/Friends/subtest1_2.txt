@@ -1,4 +1,0 @@
-2
-nick|y|penn state
-kaitlin|y|rutgers
-nick|kaitlin

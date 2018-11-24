@@ -1,9 +1,0 @@
-4
-a|y|rutgers
-b|y|rutgers
-c|y|cornell
-d|y|cornell
-a|b
-b|d
-d|c
-c|a
