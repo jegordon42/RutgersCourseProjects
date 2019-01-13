@@ -1,0 +1,20 @@
+Implemented Extra Credit
+
+To create my cache, I used the following structs as my data structures:
+
+typedef struct  cacheBlock {
+	unsigned long tag;
+	int valid;
+} cacheBlock;
+
+typedef struct cacheSet {
+	cacheBlock* 	blocksInSet;
+	int* LRUtracker;
+	int	indexToOverwrite;
+} cacheSet;
+
+The "cacheBlock" represents a single block to be used in the cache. The "tag" field represents the block's tag and the "valid" field represents if the block is valid or not.
+
+The "cacheSet" represents a single set to be used in the cache. To represent the whole cache, I created an array of these cacheSets. The "blocksInSet" represents all of the blocks in that set by storing them in an array of "cacheBlock". The "LRUtracker" field is an array of integers that is used to calculate the least recently used block in each set only when the cache policy is set to 'LRU'. The "indexToOverwrite" field is an integer that stores the next block to overwrite.
+
+Using the prefetch method, you can observe there are usually more reads and more hits. This would make sense because it increases spatial locality and hence, if a program is using addresses next to each other, there would be more hits because the adjacent blocks are already in the cache.
